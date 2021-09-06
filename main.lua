@@ -24,3 +24,7 @@ function love.draw()
     love.graphics.draw( personagem, x, y, 0, 1, 1, 30, 30 )
     love.graphics.draw( bola, x2, y2, 0, 1, 1, 24, 24 )
 end
+
+function math.dist( x1, y1, x2, y2)
+    return ((x2 - x1) ^ 2 + (y2 - y1) ^ 2) ^ 0.5
+end
